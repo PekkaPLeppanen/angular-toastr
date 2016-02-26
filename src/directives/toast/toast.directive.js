@@ -4,9 +4,9 @@
     angular.module('toastr')
         .directive('toast', toast);
 
-    toast.$inject = ['$injector', '$interval', 'toastrConfig', 'toastr'];
+    toast.$inject = ['$interval', 'toastrConfig', 'toastr'];
 
-    function toast($injector, $interval, toastrConfig, toastr) {
+    function toast($interval, toastrConfig, toastr) {
         return {
             replace: true,
             templateUrl: function () {

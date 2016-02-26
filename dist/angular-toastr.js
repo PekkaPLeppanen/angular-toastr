@@ -4,9 +4,9 @@
     angular.module('toastr', [])
         .factory('toastr', toastr);
 
-    toastr.$inject = ['$animate', '$injector', '$document', '$rootScope', '$sce', 'toastrConfig', '$q'];
+    toastr.$inject = ['$animate', '$injector', '$rootScope', 'toastrConfig', '$q'];
 
-    function toastr($animate, $injector, $document, $rootScope, $sce, toastrConfig, $q) {
+    function toastr($animate, $injector, $rootScope, toastrConfig, $q) {
         var container;
         var index = 0;
         var toasts = [];
@@ -355,9 +355,6 @@
 (function () {
     'use strict';
 
-    angular.module('toastr')
-        .controller('ToastController', ToastController);
-
     function ToastController() {
         this.progressBar = null;
 
@@ -368,6 +365,10 @@
         };
 
     }
+
+    angular.module('toastr')
+        .controller('ToastController', ToastController);
+
 }());
 
 (function () {
@@ -376,9 +377,9 @@
     angular.module('toastr')
         .directive('toast', toast);
 
-    toast.$inject = ['$injector', '$interval', 'toastrConfig', 'toastr'];
+    toast.$inject = ['$interval', 'toastrConfig', 'toastr'];
 
-    function toast($injector, $interval, toastrConfig, toastr) {
+    function toast($interval, toastrConfig, toastr) {
         return {
             replace: true,
             templateUrl: function () {
