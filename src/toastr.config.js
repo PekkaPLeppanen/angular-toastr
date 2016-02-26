@@ -3,10 +3,8 @@
 
   angular.module('toastr')
     .constant('toastrConfig', {
-      allowHtml: false,
       autoDismiss: false,
       closeButton: false,
-      closeHtml: '<button>&times;</button>',
       containerId: 'toast-container',
       extendedTimeOut: 1000,
       iconClasses: {
