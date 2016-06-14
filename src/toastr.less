@@ -1,13 +1,9 @@
 // Mix-ins
 .borderRadius(@radius) {
-  -moz-border-radius: @radius;
-  -webkit-border-radius: @radius;
   border-radius: @radius;
 }
 
 .boxShadow(@boxShadow) {
-  -moz-box-shadow: @boxShadow;
-  -webkit-box-shadow: @boxShadow;
   box-shadow: @boxShadow;
 }
 
@@ -16,11 +12,11 @@
 @grey: #999999;
 @light-grey: #CCCCCC;
 @white: #FFFFFF;
-@near-black: #030303;
-@green: #51A351;
-@red: #BD362F;
-@blue: #2F96B4;
-@orange: #F89406;
+@near-black: #313131;
+@green: #50B948;
+@red: #c41230;
+@blue: #00AECB;
+@orange: #FCDC41;
 
 // Styles
 .toast-title {
@@ -49,7 +45,6 @@
   font-size: 20px;
   font-weight: bold;
   color: @white;
-  -webkit-text-shadow: 0 1px 0 rgba(255,255,255,1);
   text-shadow: 0 1px 0 rgba(255,255,255,1);
   opacity: 0.8;
 
@@ -135,9 +130,8 @@ button.toast-close-button {
     margin: 0 0 6px;
     padding: 15px 15px 15px 50px;
     width: 300px;
-    .borderRadius(3px 3px 3px 3px);
-    background-position: 15px center;
-    background-repeat: no-repeat;
+    .borderRadius(3px);
+    background: no-repeat 15px center;
     .boxShadow(0 0 12px @grey);
     color: @white;
     opacity: 0.8;

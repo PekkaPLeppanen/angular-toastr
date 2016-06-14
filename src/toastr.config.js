@@ -6,7 +6,7 @@
       autoDismiss: false,
       closeButton: false,
       containerId: 'toast-container',
-      extendedTimeOut: 1000,
+      extendedTimeOut: 3000,
       iconClasses: {
         error: 'toast-error',
         info: 'toast-info',
@@ -19,17 +19,17 @@
       onHidden: null,
       onShown: null,
       onTap: null,
-      positionClass: 'toast-top-right',
+      positionClass: 'toast-bottom-right',
       preventDuplicates: false,
       preventOpenDuplicates: false,
-      progressBar: false,
+      progressBar: true,
       tapToDismiss: true,
-      target: 'body',
+      target: '.content',
       templates: {
-        toast: 'directives/toast/toast.html',
-        progressbar: 'directives/progressbar/progressbar.html'
+          toast: 'app/messages/toast.html',
+          progressbar: 'app/messages/progressbar.html'
       },
-      timeOut: 5000,
+      timeOut: 10000,
       titleClass: 'toast-title',
       toastClass: 'toast'
     });
