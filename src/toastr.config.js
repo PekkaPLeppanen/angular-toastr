@@ -26,8 +26,8 @@
       tapToDismiss: true,
       target: '.content',
       templates: {
-          toast: 'app/messages/toast.html',
-          progressbar: 'app/messages/progressbar.html'
+          toast: 'messages/toast.html',
+          progressbar: 'messages/progressbar.html'
       },
       timeOut: 10000,
       titleClass: 'toast-title',
